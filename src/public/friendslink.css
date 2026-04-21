@@ -1,0 +1,141 @@
+.fl-links-wrap {
+    --fl-cols: 2;
+    margin: 1.5em 0;
+}
+
+.fl-category-group {
+    margin-bottom: 2em;
+}
+
+.fl-category-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    margin: 0 0 0.75em;
+    padding-bottom: 0.4em;
+    border-bottom: 2px solid #eee;
+}
+
+.fl-links-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--fl-cols), 1fr);
+    gap: 12px;
+}
+
+/* 横向长方形卡片 */
+.fl-link-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    padding: 14px 40px 14px 14px; /* 右侧留出分类badge空间 */
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+    overflow: hidden;
+    min-height: 72px;
+}
+
+.fl-link-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Logo / 首字头像 */
+.fl-link-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.fl-link-initial {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    background: #6366f1;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+/* 文字内容区 */
+.fl-link-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    flex: 1;
+    gap: 3px;
+}
+
+.fl-link-name {
+    font-size: 0.95em;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fl-link-desc {
+    font-size: 0.78em;
+    color: #6b7280;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tags */
+.fl-link-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 2px;
+}
+
+.fl-link-tag {
+    font-size: 0.68em;
+    background: #eff6ff;
+    color: #3b82f6;
+    padding: 1px 7px;
+    border-radius: 99px;
+    white-space: nowrap;
+}
+
+/* 分类徽章 —— 右上角 */
+.fl-link-category {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 0.68em;
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 2px 8px;
+    border-radius: 99px;
+    white-space: nowrap;
+    max-width: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fl-empty {
+    color: #9ca3af;
+}
+
+@media (max-width: 640px) {
+    .fl-links-grid {
+        grid-template-columns: 1fr !important;
+    }
+}

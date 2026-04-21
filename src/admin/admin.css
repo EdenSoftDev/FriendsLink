@@ -1,0 +1,22 @@
+.fl-wrap .fl-table .fl-logo-thumb {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    vertical-align: middle;
+    margin-right: 6px;
+    object-fit: cover;
+}
+
+.fl-form .required {
+    color: #b32d2e;
+}
+
+.fl-form .form-table td .regular-text {
+    width: 100%;
+    max-width: 480px;
+}
+
+.fl-form .form-table textarea.regular-text {
+    width: 100%;
+    max-width: 480px;
+}
