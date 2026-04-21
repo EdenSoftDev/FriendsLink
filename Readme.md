@@ -6,6 +6,8 @@
 
 FriendsLink 是基于 Wordpress 的一个友链管理和显示插件。其提供了一个简单的方式来轻松的添加和管理友链。
 
+你可以在这里查看 Sample：https://is14w.xyz/%e5%8f%8b%e9%93%be/
+
 ## 功能
 
 友链具备如下可选项：
